@@ -1,2 +1,7 @@
 ﻿  main.cpp
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(96,18): warning C4267: 'argument': conversion from 'size_t' to 'itemType', possible loss of data
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(96,18): warning C4267:         with
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(96,18): warning C4267:         [
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(96,18): warning C4267:             itemType=int
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(96,18): warning C4267:         ]
   Assignment 3.vcxproj -> C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\x64\Debug\Assignment 3.exe

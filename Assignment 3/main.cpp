@@ -1,169 +1,11 @@
-#include <iostream>
-using namespace std;
-
-template<typename itemType>
-struct Node {
-	itemType data;
-	Node<itemType>* next = nullptr;
-
-	// Default constructor
-	Node(const itemType& item) 
-		: data(item), next(nullptr) {}
-};
-
-template<typename itemType>
-class Queue {
-private:
-	Node<itemType>* tail;
-	Node<itemType>* front;
-	int num_items;
-
-public:
-	// Constructor function
-	Queue(Node<itemType>* tail = nullptr, Node<itemType>* front = nullptr, int num_items = 0) 
-		: tail(tail), front(front), num_items(num_items) {};
-
-	/*
-	@ returns size of the Queue (the number of items in it)
-	*/
-	int size() {
-		return num_items;
-	}
-
-	/*
-	@ returns true if the Queue is empty and false otherwise
-	*/
-	bool empty() {
-		if (tail == nullptr) {
-			return true;
-		}
-		return false;
-	}
-
-	/*
-	Print function -- this function prints out the contents of the queue
-	*/
-	void print() {
-		// If the queue is empty...
-		if (empty()) {
-			cout << "The queue is empty." << endl;
-		}
-		// If the queue has exactly one node...
-		else if (tail == front) {
-			cout << "Queue: " << tail->data << " (1 Item)" << endl;
-		}
-		// The queue has more than one node.
-		else {
-			cout << "Queue: ";
-			Node<itemType>* currentNode = tail;
-			while (currentNode != front) {
-				cout << currentNode->data << ", ";
-				currentNode = currentNode->next;
-			}
-			cout << currentNode->data << " (" << size() << " items)" << endl;
-		}
-	}
-
-	/*
-	Push function -- this function pushes a node to the tail of the queue
-	@ arg item: Item being pushed to the tail-end of the queue.
-	*/
-	void push(itemType item) {
-		Node<itemType>* newNode = new Node<itemType>(item);
-		// If the queue is empty...
-		if (empty()) {
-			tail = newNode;
-			front = newNode;
-			++num_items;
-		}
-		// If the queue has exactly one item...
-		else if (tail == front) {
-			newNode->next = front;
-			tail = newNode;
-			++num_items;
-		}
-		// The queue has multiple nodes already.
-		else {
-			newNode->next = tail;
-			tail = newNode;
-			++num_items;
-		}
-	}
-
-	/*
-	@ returns the item at the front of the queue (by-reference)
-	*/
-	itemType& getFront() {
-		return front->data;
-	}
-
-	/*
-	Removes the node at the front of the queue.
-	*/
-	void pop() {
-		// If the Queue is empty...
-		if (empty()) {
-			cout << "Queue empty -- No items to remove." << endl;
-		}
-		// If there is exactly one item in the Queue...
-		else if (tail == front) {
-			delete tail;
-			tail = nullptr;
-			front = nullptr;
-			--num_items;
-		}
-		else {
-		// There are multiple items in the Queue 
-			Node<itemType>* currentNode = tail;
-			while (currentNode->next != front) {
-				currentNode = currentNode->next;
-			}
-			delete front;
-			front = currentNode;
-			--num_items;
-		}
-	}
-
-	/*
-	Removes item at the front of the Queue and appends it to the back of the Queue
-	*/
-	void move_to_rear() {
-		itemType temp = getFront();
-		pop();
-		push(temp);
-	}
-
-	/*
-	Recursively searches the queue to find the last instance of a given value
-	@ param target: By-reference itemType. This is the value we're looking for the last instance of.
-	@ param pos: integer. We'll want to enter it size() - 1 when we originally call it. 
-	@ return position of the last instance of the target value.
-	*/
-	itemType reverse_linear_search(itemType target, int pos) {
-		Node<itemType>* currentNode = tail;
-		int index = 0;
-
-		while (index < pos) {
-			currentNode = currentNode->next;
-			++index;
-		}
-
-		// If the whole Queue has been searched to no avail
-		if (pos < 0)
-			return -1;
-		// If the target is found...
-		if (target == currentNode->data)
-			return pos;
-		// If the target hasn't been found but the search isn't over...
-		else
-			return reverse_linear_search(target, pos-1);
-	}
-};
+#include "assignment_3.h"
 
 int main() {
 	//Variables
 	Queue<int> myQueue;
 	Queue<int> tempQueue;
+	vector<int> myVector;
+	Single_Linked_List<int> myList;
 
 	// Main program
 	myQueue.print();
@@ -196,7 +38,7 @@ int main() {
 	// Push function demonstration
 	cout << "Adding ten items to the queue." << endl;
 	for (size_t i = 0; i < 10; ++i) {
-		myQueue.push(i % 3);
+		myQueue.push(i * 3);
 	}
 	cout << endl;
 
@@ -228,7 +70,43 @@ int main() {
 	myQueue.move_to_rear();
 	myQueue.print();
 
-	// demonstrate reverse_linear_search() function
-	cout << "Demonstrating recursive search function." << endl;
-	cout << "The last instance of the value 2 is at index " << myQueue.reverse_linear_search(2, myQueue.size() - 1) << endl << endl;
+	// demonstrate recursive linear search function
+	
+		cout << endl << "Performing recursive reverse linear search function." << endl;
+
+		// Create vector
+		cout << "Creating vector..." << endl;
+		for (size_t i = 1; i < 9; ++i) {
+			myVector.push_back(i % 4);
+		}
+
+		// Print out vector
+		for (size_t i = 0; i < myVector.size(); ++i) {
+			cout << myVector.at(i) << " ";
+		}
+		cout << endl;
+
+		// Demonstrate vRLS()
+		cout << "The last instace of the number 0 is at index " << vRLS(myVector, 0, myVector.size() - 1) << endl;
+		cout << "The last instace of the number 1 is at index " << vRLS(myVector, 1, myVector.size() - 1) << endl;
+		cout << "The last instace of the number 2 is at index " << vRLS(myVector, 2, myVector.size() - 1) << endl;
+		cout << "The last instace of the number 3 is at index " << vRLS(myVector, 3, myVector.size() - 1) << endl;
+		cout << "The last instace of the number 4 is at index " << vRLS(myVector, 4, myVector.size() - 1) << endl;
+		cout << endl;
+
+	// Demonstrate linked list insertion sort
+
+		// Create linked list
+		cout << "Creating linked list..." << endl;
+		for (size_t i = 1; i < 9; ++i) {
+			myList.push_back(i % 4);
+		}
+
+		// Print out linked list
+		myList.print_list();
+
+		// Sort list
+		cout << "Sorting list..." << endl;
+		insertion_sort(myList);
+		myList.print_list();
 }

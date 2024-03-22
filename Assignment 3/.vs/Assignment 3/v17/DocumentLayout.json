@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{F2A6E5F9-5EA3-40CF-8C22-E8ED200256C1}|Assignment 3.vcxproj|C:\\Users\\mickl\\OneDrive\\Documents\\GitHub\\Assignment-3\\Assignment 3\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F2A6E5F9-5EA3-40CF-8C22-E8ED200256C1}|Assignment 3.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2A6E5F9-5EA3-40CF-8C22-E8ED200256C1}|Assignment 3.vcxproj|C:\\Users\\mickl\\OneDrive\\Documents\\GitHub\\Assignment-3\\Assignment 3\\assignment_3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F2A6E5F9-5EA3-40CF-8C22-E8ED200256C1}|Assignment 3.vcxproj|solutionrelative:assignment_3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2A6E5F9-5EA3-40CF-8C22-E8ED200256C1}|Assignment 3.vcxproj|C:\\Users\\mickl\\OneDrive\\Documents\\GitHub\\Assignment-3\\Assignment 3\\assignment_3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F2A6E5F9-5EA3-40CF-8C22-E8ED200256C1}|Assignment 3.vcxproj|solutionrelative:assignment_3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +22,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "assignment_3.cpp",
+              "DocumentMoniker": "C:\\Users\\mickl\\OneDrive\\Documents\\GitHub\\Assignment-3\\Assignment 3\\assignment_3.cpp",
+              "RelativeDocumentMoniker": "assignment_3.cpp",
+              "ToolTip": "C:\\Users\\mickl\\OneDrive\\Documents\\GitHub\\Assignment-3\\Assignment 3\\assignment_3.cpp",
+              "RelativeToolTip": "assignment_3.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-22T17:27:49.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "assignment_3.h",
+              "DocumentMoniker": "C:\\Users\\mickl\\OneDrive\\Documents\\GitHub\\Assignment-3\\Assignment 3\\assignment_3.h",
+              "RelativeDocumentMoniker": "assignment_3.h",
+              "ToolTip": "C:\\Users\\mickl\\OneDrive\\Documents\\GitHub\\Assignment-3\\Assignment 3\\assignment_3.h",
+              "RelativeToolTip": "assignment_3.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAPgBAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-22T16:53:24.958Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -28,7 +62,7 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\mickl\\OneDrive\\Documents\\GitHub\\Assignment-3\\Assignment 3\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAM0AAAAAAAAAAAAiwOkAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-20T21:38:17.006Z",
               "EditorCaption": ""

@@ -1,7 +1,19 @@
-﻿  main.cpp
-C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(175,18): warning C4267: 'argument': conversion from 'size_t' to 'itemType', possible loss of data
-C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(175,18): warning C4267:         with
-C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(175,18): warning C4267:         [
-C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(175,18): warning C4267:             itemType=int
-C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(175,18): warning C4267:         ]
+﻿  assignment_3.cpp
+  main.cpp
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(17,18): warning C4267: 'argument': conversion from 'size_t' to 'itemType', possible loss of data
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(17,18): warning C4267:         with
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(17,18): warning C4267:         [
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(17,18): warning C4267:             itemType=int
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(17,18): warning C4267:         ]
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(41,18): warning C4267: 'argument': conversion from 'size_t' to 'itemType', possible loss of data
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(41,18): warning C4267:         with
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(41,18): warning C4267:         [
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(41,18): warning C4267:             itemType=int
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(41,18): warning C4267:         ]
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(90,96): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(91,96): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(92,96): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(93,96): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\main.cpp(94,96): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
   Assignment 3.vcxproj -> C:\Users\mickl\OneDrive\Documents\GitHub\Assignment-3\Assignment 3\x64\Debug\Assignment 3.exe
